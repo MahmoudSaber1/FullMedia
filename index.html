@@ -13,14 +13,14 @@
     <!-- bootstrap css -->
     <link rel="stylesheet" href="./css/bootstrap.min.css" />
     <!-- main css -->
-    <link rel="stylesheet" href="./css/latest.css">
+    <link rel="stylesheet" href="./css/latest.css" />
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
     <!-- Start Preload -->
-      <div class="preloader">
-        <span></span>
-      </div>
+    <div class="preloader">
+      <span></span>
+    </div>
     <!-- End Preload -->
 
     <!-- Start Navbar -->
@@ -41,7 +41,10 @@
           <i class="fas fa-bars"></i>
         </button>
         <!-- Navbar Links  -->
-        <div class="collapse navbar-collapse" id="NavSlider">
+        <div
+          class="collapse navbar-collapse justify-content-between"
+          id="NavSlider"
+        >
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
               <a class="nav-link" data-scroll-nav="0" href="./index.html">
@@ -73,24 +76,21 @@
             </li>
           </ul>
           <div class="d-flex">
-            <li class="nav-item">
-              <a
-                class="nav-link pt-1 pb-1 pr-3 pl-3 btn btn-success"
-                data-scroll-nav="5"
-                href="./Pages/login.html"
-              >
-                Login
-              </a>
-            </li>
-            <li class="nav-item">
-              <a
-                class="nav-link pt-1 pb-1 pr-3 pl-3 btn btn-secondary"
-                data-scroll-nav="6"
-                href="./Pages/signup.html"
-              >
-                Sign Up
-              </a>
-            </li>
+            <a
+              class="nav-link login pt-1 pb-1 pr-3 pl-3 btn btn-1 mr-3"
+              data-scroll-nav="5"
+              href="./Pages/login.html"
+            >
+              Login
+            </a>
+
+            <a
+              class="nav-link sign pt-1 pb-1 pr-3 pl-3 btn btn-2"
+              data-scroll-nav="6"
+              href="./Pages/signup.html"
+            >
+              Sign Up
+            </a>
           </div>
         </div>
       </div>
@@ -190,9 +190,13 @@
         <div class="container">
           <div class="row mb-3">
             <div class="col-lg-4 col-md-6">
-              <div class="card" style="width: 100%;">
+              <div class="card" style="width: 100%">
                 <a href="/courses-details">
-                  <img src="images/assits/Editing.jpeg" class="card-img-top" alt="..." />
+                  <img
+                    src="images/assits/Editing.jpeg"
+                    class="card-img-top"
+                    alt="..."
+                  />
                 </a>
                 <div class="card-body">
                   <a class="card-title" href="./Pages/courses-details.html">
@@ -222,7 +226,11 @@
                 <div class="card-footer">
                   <div class="row align-items-center g-0">
                     <div class="col-auto image">
-                      <img src="images/assits/Nav.png" alt="icon" class="w-100 h-100" />
+                      <img
+                        src="images/assits/Nav.png"
+                        alt="icon"
+                        class="w-100 h-100"
+                      />
                     </div>
                     <div class="col nameS">
                       <span>Full Media</span>

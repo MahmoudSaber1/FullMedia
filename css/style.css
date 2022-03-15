@@ -394,6 +394,11 @@ ul {
   -o-transform: scale(1);
 }
 
+.navbar .login,
+.navbar .sign {
+  font-weight: 600;
+}
+
 .main {
   min-height: 100vh;
   display: flex;
