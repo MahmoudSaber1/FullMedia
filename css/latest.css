@@ -1,0 +1,137 @@
+/* ---------- Fonts ----------- */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+
+/* ---------- Global CSS ----------- */
+:root {
+  --main-color: #7857fe;
+  --color-1: #e91e63;
+  --color-2: #f5ae10;
+  --color-3: #09d69c;
+  --bg-dark: #2b2c2f;
+  --main-to-dark-color: var(--main-color);
+  --dark-to-main-color: var(--bg-dark);
+  --shadow-black-100: 0 5px 15px rgba(0, 0, 0, 0.1);
+  --shadow-black-300: 0 5px 15px rgba(0, 0, 0, 0.3);
+  --black-900: #000;
+  --black-400: #555;
+  --black-100: #f7f7f7;
+  --black-000: #fff;
+  --color-fff: #fff;
+  --black-alpha-100: rgba(0, 0, 0, 0.05);
+  --main-padding: 60px 0;
+  --m-15: 15px;
+  --p-30: 30px;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  overflow-x: hidden;
+  font-weight: 400;
+  background-color: #fff;
+  text-transform: capitalize;
+  line-height: 1.5;
+}
+
+body.dark {
+  background-color: var(--bg-dark);
+  --black-100: var(--bg-dark);
+  --black-000: var(--bg-dark);
+  --main-to-dark-color: var(--bg-dark);
+  --dark-to-main-color: var(--main-color);
+  --shadow-black-100: var(--shadow-black-300);
+  --black-alpha-100: rgba(255, 255, 255, 0.05);
+  --black-900: #fff;
+  --black-400: #bbb;
+}
+
+.latest {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.latest .card {
+  transition: 0.3s;
+  background: none;
+  border: 1px solid var(--black-000);
+  box-shadow: var(--shadow-black-300);
+}
+
+.latest .card:hover {
+  box-shadow: var(--shadow-black-100);
+}
+
+.latest .card img {
+  height: 250px;
+}
+
+.latest .card a {
+  color: inherit;
+  text-decoration: none;
+  font-size: 25px;
+  letter-spacing: 1px;
+  font-weight: 600;
+  color: var(--black-900);
+}
+
+.latest .card a:hover {
+  color: var(--black-400);
+}
+
+.latest .card .infoCourse {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+  margin-top: 15px;
+}
+
+.latest .card .infoCourse .hours {
+  font-size: 14px;
+  font-weight: 300;
+  color: var(--black-400);
+}
+
+.latest .card .infoCourse .level {
+  font-size: 16px;
+  color: var(--black-900);
+}
+
+.latest .card .price span:first-of-type {
+  font-size: 16px;
+  color: var(--black-900);
+}
+
+.latest .card .price span:last-of-type {
+  font-size: 16px;
+  font-weight: 300;
+  color: var(--black-400);
+}
+
+.latest .card .stars {
+  color: var(--color-2);
+  font-size: 14px;
+}
+
+.latest .card .image {
+  width: 15%;
+  height: 15%;
+}
+
+.latest .card .nameS {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  letter-spacing: 1px;
+  color: var(--black-900);
+}
+
+.latest .card .marks i {
+  cursor: pointer;
+  color: var(--black-900);
+}
+
+.latest .card del {
+  text-decoration: line-through !important;
+}

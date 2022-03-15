@@ -1,0 +1,118 @@
+.details {
+  min-height: 100vh;
+  margin-top: 40px !important;
+}
+
+.details .info {
+  box-shadow: var(--shadow-black-300);
+  padding: 15px;
+  margin-bottom: 15px;
+}
+
+.details .info h2 {
+  color: var(--black-900);
+}
+
+.details .info p {
+  color: var(--black-900);
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+.details .info .stars {
+  color: var(--color-2);
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.details .info .footerInfo {
+  display: flex;
+  gap: 20px;
+  color: white;
+}
+
+@media (max-width: 576px) {
+  .details .info .footerInfo {
+    gap: 5px;
+  }
+  .details .info .footerInfo span {
+    font-size: 12px;
+    padding: 0.25rem !important;
+  }
+}
+
+.details .main-video-container {
+  flex: 1 1 700px;
+  border-radius: 5px;
+  box-shadow: var(--shadow-black-100);
+  background-color: var(--black-000);
+  padding: 10px;
+}
+
+.details .main-video-container .main-video {
+  margin-bottom: 7px;
+  border-radius: 5px;
+  width: 100%;
+}
+
+.details .main-video-container .main-vid-title {
+  font-size: 20px;
+  color: var(--black-900);
+}
+
+.details .video-list-container {
+  flex: 1 1 350px;
+  height: 485px;
+  overflow-y: scroll;
+  border-radius: 5px;
+  box-shadow: var(--shadow-black-100);
+  background-color: var(--black-000);
+  padding: 15px;
+}
+
+.details .video-list-container::-webkit-scrollbar {
+  width: 10px;
+}
+
+.details .video-list-container::-webkit-scrollbar-track {
+  background-color: #fff;
+  border-radius: 5px;
+}
+
+.details .video-list-container::-webkit-scrollbar-thumb {
+  background-color: #444;
+  border-radius: 5px;
+}
+
+.details .video-list-container .list {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 10px;
+  background-color: #eee;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.details .video-list-container .list:last-child {
+  margin-bottom: 0;
+}
+
+.details .video-list-container .list.active {
+  background-color: #444;
+}
+
+.details .video-list-container .list.active .list-title {
+  color: #fff;
+}
+
+.details .video-list-container .list .list-video {
+  width: 100px;
+  border-radius: 5px;
+}
+
+.details .video-list-container .list .list-title {
+  font-size: 17px;
+  color: #444;
+}
